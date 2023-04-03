@@ -1,0 +1,24 @@
+{
+  "name": "migration-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@aries-framework/askar": "0.4.0-alpha.98",
+    "@aries-framework/core": "0.4.0-alpha.98",
+    "@aries-framework/indy-sdk": "0.4.0-alpha.98",
+    "@aries-framework/indy-sdk-to-askar-migration": "0.4.0-alpha.98",
+    "@aries-framework/node": "0.4.0-alpha.98",
+    "@hyperledger/aries-askar-nodejs": "0.1.0-dev.7",
+    "indy-sdk": "1.16.0-dev-1655"
+  },
+  "devDependencies": {
+    "patch-package": "6.5.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.0.3"
+  }
+}
