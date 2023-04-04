@@ -1,40 +1,39 @@
-import { AskarModule } from '@aries-framework/askar'
+import path from "path";
+import { AskarModule } from "@aries-framework/askar";
 import {
   Agent,
   ConsoleLogger,
   InitConfig,
   KeyDerivationMethod,
   LogLevel,
-} from '@aries-framework/core'
-import { IndySdkModule } from '@aries-framework/indy-sdk'
-import { IndySdkToAskarMigrationUpdater } from '@aries-framework/indy-sdk-to-askar-migration'
-import { agentDependencies } from '@aries-framework/node'
-import { ariesAskar } from '@hyperledger/aries-askar-nodejs'
-import indySdk from 'indy-sdk'
+} from "@aries-framework/core";
+import { IndySdkToAskarMigrationUpdater } from "@aries-framework/indy-sdk-to-askar-migration";
+import { agentDependencies } from "@aries-framework/node";
+import { ariesAskar } from "@hyperledger/aries-askar-nodejs";
 
 try {
   void (async () => {
-    ariesAskar.setDefaultLogger()
+    ariesAskar.setDefaultLogger();
 
     const config: InitConfig = {
-      label: 'label of agent',
+      label: "label of agent",
       walletConfig: {
-        id: 'wallet-id2',
-        key: 'GfwU1DC7gEZNs3w41tjBiZYj7BNToDoFEqKY6wZXqs1A',
-        keyDerivationMethod: KeyDerivationMethod.Argon2IInt,
+        id: "walletId",
+        key: "d85dc2997f0533c4221d63ac5ea9ebb149355d9acddc41dc5612230dcedb38e6",
+        // keyDerivationMethod: KeyDerivationMethod.Argon2IMod,
       },
       logger: new ConsoleLogger(LogLevel.trace),
-    }
+    };
 
-    const indyAgent = new Agent({
-      config,
-      dependencies: agentDependencies,
-      modules: {
-        indySdk: new IndySdkModule({
-          indySdk,
-        }),
-      },
-    })
+    // const indyAgent = new Agent({
+    //   config,
+    //   dependencies: agentDependencies,
+    //   modules: {
+    //     indySdk: new IndySdkModule({
+    //       indySdk,
+    //     }),
+    //   },
+    // })
 
     const askarAgent = new Agent({
       config,
@@ -44,21 +43,22 @@ try {
           ariesAskar,
         }),
       },
-    })
+    });
 
-    await indyAgent.initialize()
-    await indyAgent.shutdown()
+    // await indyAgent.initialize();
+    // await indyAgent.shutdown();
 
+    console.log(path.resolve("./rn-db.db"));
     const updater = await IndySdkToAskarMigrationUpdater.initialize({
       agent: askarAgent,
-      dbPath: `/home/beri/.indy_client/wallet/${config.walletConfig!.id}/sqlite.db`,
-    })
+      dbPath: path.resolve("./rn-db.db"),
+    });
 
-    await updater.update()
+    await updater.update();
 
-    process.exit(0)
-  })()
+    process.exit(0);
+  })();
 } catch (e) {
-  console.error('ERROR: ', e)
-  process.exit(1)
+  console.error("ERROR: ", e);
+  process.exit(1);
 }
