@@ -23,7 +23,7 @@ In React Native, the script fails with `Invalid key data` when migrate the first
 
 In Node.JS the script succeeds. The order of the keys is a bit different. So the second key in the node.js script is the same one as the one that fails in React Native.
 
-This script runs the migration on the RN sqlite database, which as been copied.
+This script runs the migration on the RN sqlite database, which as been copied.\*\*\*\*
 
 ```sh
 yarn install
@@ -96,3 +96,7 @@ TRACE: Moving upgraded database from /var/folders/l3/xy8jzyvj4p5_d9g1123rt4bw000
 TRACE: Deleting the backup file at '/var/folders/l3/xy8jzyvj4p5_d9g1123rt4bw0000gn/T/.afj/walletId.db'
 ✨  Done in 10.79s.
 ```
+
+## Reproduce in RN
+
+- Run from this branch: https://github.com/hyperledger/aries-mobile-agent-react-native/tree/feat/upgrading-to-AFJ-040. It will download the file on startup and upgrade the database.
