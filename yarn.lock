@@ -2,23 +2,23 @@
 # yarn lockfile v1
 
 
-"@aries-framework/anoncreds@0.4.0-alpha.102+fe10fb44":
-  version "0.4.0-alpha.102"
-  resolved "https://registry.yarnpkg.com/@aries-framework/anoncreds/-/anoncreds-0.4.0-alpha.102.tgz#41d84d1da1e6ce1de672191a8449490d38a91d3e"
-  integrity sha512-/yqS2d5Tgaw9Ij/kjcpZV/dKPBgkRZKP5RQHKgTMmdFm/Kh3hS0uAU3MwN6UzNKwJ+hiLOL9LHfUse4I8QHTOQ==
+"@aries-framework/anoncreds@0.4.0-alpha.115+d247b53d":
+  version "0.4.0-alpha.115"
+  resolved "https://registry.yarnpkg.com/@aries-framework/anoncreds/-/anoncreds-0.4.0-alpha.115.tgz#1bcab93d3689bc22f82b30da18a404988c759a53"
+  integrity sha512-tWGrUn5sk3Y7oskam3hr54MJ/sEltTfma8lsOGvDnVr81weyA0qaXX1Spp+1NRVQCa6tm4hy+uKuDNOkFkFfEQ==
   dependencies:
-    "@aries-framework/core" "0.4.0-alpha.102+fe10fb44"
+    "@aries-framework/core" "0.4.0-alpha.115+d247b53d"
     bn.js "^5.2.1"
     class-transformer "0.5.1"
     class-validator "0.14.0"
     reflect-metadata "^0.1.13"
 
-"@aries-framework/askar@0.4.0-alpha.102", "@aries-framework/askar@0.4.0-alpha.102+fe10fb44":
-  version "0.4.0-alpha.102"
-  resolved "https://registry.yarnpkg.com/@aries-framework/askar/-/askar-0.4.0-alpha.102.tgz#697b5ea98e7175547b4725280332e4bb516e647d"
-  integrity sha512-RdmJUeXqtap6OOymLVJBzhAnZ5PWouEh/hO2dgGq1aaxhFzxaszrz8HL+KLOx23GuCNbxMlBHLawkRY40AzcqA==
+"@aries-framework/askar@0.4.0-alpha.115", "@aries-framework/askar@0.4.0-alpha.115+d247b53d":
+  version "0.4.0-alpha.115"
+  resolved "https://registry.yarnpkg.com/@aries-framework/askar/-/askar-0.4.0-alpha.115.tgz#fb2c837045b88bfc11c5dffa720027b37f72fa0d"
+  integrity sha512-ICB6XwuR2uu/SCZOi8iVHHQoNTaX5o4tLRTCOB86WTzNkwzdmPiNB6ZD1dm8l3Z+jqV/2znbflZF7aBFsl+hkA==
   dependencies:
-    "@aries-framework/core" "0.4.0-alpha.102+fe10fb44"
+    "@aries-framework/core" "0.4.0-alpha.115+d247b53d"
     "@hyperledger/aries-askar-shared" "^0.1.0-dev.8"
     bn.js "^5.2.1"
     class-transformer "0.5.1"
@@ -26,10 +26,10 @@
     rxjs "^7.2.0"
     tsyringe "^4.7.0"
 
-"@aries-framework/core@0.4.0-alpha.102", "@aries-framework/core@0.4.0-alpha.102+fe10fb44":
-  version "0.4.0-alpha.102"
-  resolved "https://registry.yarnpkg.com/@aries-framework/core/-/core-0.4.0-alpha.102.tgz#3da6a38c016c13f53dd56ca5103eed0f6c0bd3f1"
-  integrity sha512-gxKC16PSil834weZpJq2WiY4r5sYEMBnETmKRsDRFOLzfALlXZ2tHw/qKq2kxoU9ZAT9/lYzSvz4yTIlqPqvfQ==
+"@aries-framework/core@0.4.0-alpha.115", "@aries-framework/core@0.4.0-alpha.115+d247b53d":
+  version "0.4.0-alpha.115"
+  resolved "https://registry.yarnpkg.com/@aries-framework/core/-/core-0.4.0-alpha.115.tgz#177d8a4e4a2c3e80c1349b5949ffaf609fbcde6c"
+  integrity sha512-w/r8cHNVFf0ZKUFiIZoHF28fb68KkwlvQ2zKZ44SXqcavRGSCvns+3bMCIcyfj/yvvDsZg0GZ1DICtYbkfwf4Q==
   dependencies:
     "@digitalcredentials/jsonld" "^5.2.1"
     "@digitalcredentials/jsonld-signatures" "^9.3.1"
@@ -38,7 +38,6 @@
     "@stablelib/ed25519" "^1.0.2"
     "@stablelib/random" "^1.0.1"
     "@stablelib/sha256" "^1.0.1"
-    "@types/node-fetch" "^2.5.10"
     "@types/ws" "^8.5.4"
     abort-controller "^3.0.0"
     borc "^3.0.0"
@@ -49,6 +48,7 @@
     lru_map "^0.4.1"
     luxon "^3.3.0"
     make-error "^1.3.6"
+    node-fetch "^2.6.1"
     object-inspect "^1.10.3"
     query-string "^7.0.1"
     reflect-metadata "^0.1.13"
@@ -58,24 +58,24 @@
     varint "^6.0.0"
     web-did-resolver "^2.0.21"
 
-"@aries-framework/indy-sdk-to-askar-migration@0.4.0-alpha.102":
-  version "0.4.0-alpha.102"
-  resolved "https://registry.yarnpkg.com/@aries-framework/indy-sdk-to-askar-migration/-/indy-sdk-to-askar-migration-0.4.0-alpha.102.tgz#00afccac79a74bf8b4ce2fbb01d72843af9e30eb"
-  integrity sha512-HZMX6xpCH4HVOKf3qXeZZLR/XgMbACrM3TZ6Xpcu0/x6TMAt/e9BNnLo9jTDY9L/3IsoJPlicyGXaqlqLNfcgg==
+"@aries-framework/indy-sdk-to-askar-migration@0.4.0-alpha.115":
+  version "0.4.0-alpha.115"
+  resolved "https://registry.yarnpkg.com/@aries-framework/indy-sdk-to-askar-migration/-/indy-sdk-to-askar-migration-0.4.0-alpha.115.tgz#3511386f7da52044029d8d340296d58e460ebfef"
+  integrity sha512-J5fqVdWq4bxfI807uGrKCp8sD5AdGvVhydv1300D2UiL7kjSguuCwcPPa5gyZnyNX2/zJzo5u75zUadTqmwdCg==
   dependencies:
-    "@aries-framework/anoncreds" "0.4.0-alpha.102+fe10fb44"
-    "@aries-framework/askar" "0.4.0-alpha.102+fe10fb44"
-    "@aries-framework/core" "0.4.0-alpha.102+fe10fb44"
-    "@aries-framework/node" "0.4.0-alpha.102+fe10fb44"
+    "@aries-framework/anoncreds" "0.4.0-alpha.115+d247b53d"
+    "@aries-framework/askar" "0.4.0-alpha.115+d247b53d"
+    "@aries-framework/core" "0.4.0-alpha.115+d247b53d"
+    "@aries-framework/node" "0.4.0-alpha.115+d247b53d"
     "@hyperledger/aries-askar-shared" "^0.1.0-dev.8"
 
-"@aries-framework/indy-sdk@0.4.0-alpha.102":
-  version "0.4.0-alpha.102"
-  resolved "https://registry.yarnpkg.com/@aries-framework/indy-sdk/-/indy-sdk-0.4.0-alpha.102.tgz#3c07ffa640744c991a5c2d98e00d47f7eca1f5b7"
-  integrity sha512-boxBFZZwLxXWHMfY7elL4+kSeieD0L8LDf5L2fOrEsXbI+CXJTiPVKIZkuAaYRgVOIlb4vsm+BD9cCgCoc44dg==
+"@aries-framework/indy-sdk@0.4.0-alpha.115":
+  version "0.4.0-alpha.115"
+  resolved "https://registry.yarnpkg.com/@aries-framework/indy-sdk/-/indy-sdk-0.4.0-alpha.115.tgz#4011778a1162af90f98c3e02e25c8a703031ae03"
+  integrity sha512-N7vY3jTIYZSaENw7v82/oPu89yIqqtDs2mR9nk8p7oVQa031oipzAbO8q6PqoHZO8LU78xqqKMaRnCcHBpBT9g==
   dependencies:
-    "@aries-framework/anoncreds" "0.4.0-alpha.102+fe10fb44"
-    "@aries-framework/core" "0.4.0-alpha.102+fe10fb44"
+    "@aries-framework/anoncreds" "0.4.0-alpha.115+d247b53d"
+    "@aries-framework/core" "0.4.0-alpha.115+d247b53d"
     "@stablelib/ed25519" "^1.0.3"
     "@types/indy-sdk" "1.16.26"
     class-transformer "0.5.1"
@@ -83,12 +83,12 @@
     rxjs "^7.2.0"
     tsyringe "^4.7.0"
 
-"@aries-framework/node@0.4.0-alpha.102", "@aries-framework/node@0.4.0-alpha.102+fe10fb44":
-  version "0.4.0-alpha.102"
-  resolved "https://registry.yarnpkg.com/@aries-framework/node/-/node-0.4.0-alpha.102.tgz#e4a5d0ac3f585037ec6fe94514ad9e0f94474c0e"
-  integrity sha512-oBU8C7TxaEKT5qC+FZy4Uz71Jh1Y7wEXlPwxVhHi3BL+goykZ7kcYeARNof3Q5z697vwvphX/jqAbmypyriffQ==
+"@aries-framework/node@0.4.0-alpha.115", "@aries-framework/node@0.4.0-alpha.115+d247b53d":
+  version "0.4.0-alpha.115"
+  resolved "https://registry.yarnpkg.com/@aries-framework/node/-/node-0.4.0-alpha.115.tgz#03af9603b556c50e1bc42d6dec6db617ff4b1197"
+  integrity sha512-YifEY6KbXWwTmeUkrAyIktvTuZmveYfsggHT3jtryTyiIYhlnDT0EF7PbKOgViTf88Zv8JnERf8YWXjGJGn6vg==
   dependencies:
-    "@aries-framework/core" "0.4.0-alpha.102+fe10fb44"
+    "@aries-framework/core" "0.4.0-alpha.115+d247b53d"
     "@types/express" "^4.17.15"
     express "^4.17.1"
     ffi-napi "^4.0.3"
@@ -414,14 +414,6 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-3.0.1.tgz#5f8f2bca0a5863cb69bc0b0acd88c96cb1d4ae10"
   integrity sha512-Y4XFY5VJAuw0FgAqPNd6NNoV44jbq9Bz2L7Rh/J6jLTiHBSBJa9fxqQIvkIld4GsoDOcCbvzOUAbLPsSKKg+uA==
 
-"@types/node-fetch@^2.5.10":
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.6.3.tgz#175d977f5e24d93ad0f57602693c435c57ad7e80"
-  integrity sha512-ETTL1mOEdq/sxUtgtOhKjyB2Irra4cjxksvcMUR5Zr4n+PxVhsCD9WS46oPbHL3et9Zde7CNRr+WUNlcHvsX+w==
-  dependencies:
-    "@types/node" "*"
-    form-data "^3.0.0"
-
 "@types/node@*":
   version "18.15.11"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.11.tgz#b3b790f09cb1696cffcec605de025b088fa4225f"
@@ -595,11 +587,6 @@ asn1js@^3.0.1, asn1js@^3.0.5:
     pvtsutils "^1.3.2"
     pvutils "^1.1.3"
     tslib "^2.4.0"
-
-asynckit@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
-  integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
 at-least-node@^1.0.0:
   version "1.0.0"
@@ -807,13 +794,6 @@ color-support@^1.1.2, color-support@^1.1.3:
   resolved "https://registry.yarnpkg.com/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
   integrity sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==
 
-combined-stream@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
-  integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
-  dependencies:
-    delayed-stream "~1.0.0"
-
 commander@^2.15.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -927,11 +907,6 @@ decode-uri-component@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
   integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
-
-delayed-stream@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
-  integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -1182,15 +1157,6 @@ find-yarn-workspace-root@^2.0.0:
   integrity sha512-1IMnbjt4KzsQfnhnzNd8wUEgXZ44IzZaZmnLYx7D5FZlaHt2gW20Cri8Q+E/t5tIj4+epTBub+2Zxu/vNILzqQ==
   dependencies:
     micromatch "^4.0.2"
-
-form-data@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/form-data/-/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
-  integrity sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.8"
-    mime-types "^2.1.12"
 
 forwarded@0.2.0:
   version "0.2.0"
@@ -1656,7 +1622,7 @@ mime-db@1.52.0:
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
   integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
 
-mime-types@^2.1.12, mime-types@~2.1.24, mime-types@~2.1.34:
+mime-types@~2.1.24, mime-types@~2.1.34:
   version "2.1.35"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
   integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==

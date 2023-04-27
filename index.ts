@@ -19,21 +19,10 @@ try {
       label: "label of agent",
       walletConfig: {
         id: "walletId",
-        key: "d85dc2997f0533c4221d63ac5ea9ebb149355d9acddc41dc5612230dcedb38e6",
-        // keyDerivationMethod: KeyDerivationMethod.Argon2IMod,
+        key: "0f6f135d1e64b0f83171dc693c2245ecf5f4cad41d39e434fc7bcc45b5b80d90",
       },
       logger: new ConsoleLogger(LogLevel.trace),
     };
-
-    // const indyAgent = new Agent({
-    //   config,
-    //   dependencies: agentDependencies,
-    //   modules: {
-    //     indySdk: new IndySdkModule({
-    //       indySdk,
-    //     }),
-    //   },
-    // })
 
     const askarAgent = new Agent({
       config,
