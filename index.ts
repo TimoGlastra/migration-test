@@ -1,9 +1,10 @@
 import path from "path";
-import { AskarModule } from "@aries-framework/askar";
+import { AskarModule, AskarWallet } from "@aries-framework/askar";
 import {
   Agent,
   ConsoleLogger,
   InitConfig,
+  InjectionSymbols,
   KeyDerivationMethod,
   LogLevel,
 } from "@aries-framework/core";
@@ -22,6 +23,7 @@ try {
         key: "0f6f135d1e64b0f83171dc693c2245ecf5f4cad41d39e434fc7bcc45b5b80d90",
       },
       logger: new ConsoleLogger(LogLevel.trace),
+      autoUpdateStorageOnStartup: true,
     };
 
     const askarAgent = new Agent({
@@ -44,6 +46,13 @@ try {
     });
 
     await updater.update();
+
+    await askarAgent.initialize();
+
+    const wallet = askarAgent.dependencyManager.resolve<AskarWallet>(
+      InjectionSymbols.Wallet
+    );
+    console.log(await wallet.session.fetchAllKeys({}));
 
     process.exit(0);
   })();
